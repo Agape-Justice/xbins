@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Binance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="images/logo192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <header class="header">
+     <section class="upperhead">
+       <div class="uphead a">Intercambiar</div>
+       <div class="uphead b">Web3</div>
+     </section>
+     
+     <section class="lowerhead">
+        <p class="downhead f">Visión General</p>
+        <p class="downhead">Spot</p>
+        <p class="downhead">Fondos</p>
+        <p class="downhead">Earn</p>
+        <p class="downhead">Margen</p>
+     </section>
+  </header>
+  
+  <section class="main">
+     <div class="hide">Saldo total <span class="eye"><img src="images/eye.png" alt="eye"></span></div>
+     
+     <div class="amountSection">
+        <input type="text" id="amount" value="$85.27" >
+        <input type="text" id="currency" value="USD">
+        <span class="downIcon"><img src="images/down.png" alt="down.png"></span>
+     </div>
+     
+     <div class="senderDetail">
+        <input type="text" id="senderName" value="PnL de hoy">
+        <input type="text" id="senderAmount" value="+0.98(+1.17%)">
+        <span class="right"><img src="images/right.png" alt="rigtIcon"></span>
+     </div>
+     
+     <div class="amountButton">
+        <button class="btn deposit">Depositar</button>
+        <button class="btn transfer">Comprar</button>        
+     </div>
+     
+     <div class="downarrow"><img src="images/low.png" alt="downarrow"></div>
+  </section>
+  
+  
+  <section class="transSection">
+     <div class="upperTrans">
+        
+        <div class="upTransDetail">
+          <p class="dot">.</p>
+          <p class="transDetail" contenteditable="true">Depósito de fiat 49 EUR, Completo</p>
+        </div>
+        
+        <div class="sidearrow"> <span class="right"><img src="images/right.png" alt="rigtIcon"></span></div>
+ </div>
+     </div>
+  </section>
+  
+  
+  <section class="middleTrans">
+     <div class="middleText">
+        <p>Cuenta</p>
+        <p class="text II">Criptomonedas</p>
+     </div>
+     
+     <div class="middleIcon">
+        <img src="images/sideIcon.png" alt="sideicon">
+     
+     </div>
+  </section>
+  
+  <section class="lowerTrans">
+     <div class="transaction">
+        
+        <div class="transactionUp">
+           <div class="currencyGuid">
+              <div class="currencyIcon" contenteditable="true">€</div>
+              <input type="text" id="currencyName" value="EUR">
+           </div>
+           <input type="text" id="currencyAmount" value="49">
+        </div>
+        
+        <div class="transactionDown">
+            <input type="text" id="currencyNameII" value="Euro">
+            <input type="text" id="currencyAmountII" value="$53.49">          
+        </div>
+     </div>
+     
+<!--====-DUPLICATE OF TRANSACTION UP =======-->    
+      <div class="transaction">
+         
+         <div class="transactionUp">
+            <div class="currencyGuid">
+               <div class="currencyIcon change" style=" background: #ffffff">
+                  <img src="images/bnb.png" alt="bnb.png">
+               </div>
+               <input type="text" id="currencyName" value="BNB">
+            </div>
+ 
+            <input type="text" id="currencyAmount" value="0.05394479" style ="width: 40%">
+         </div>
+ 
+         <div class="transactionDown">
+            <input type="text" id="currencyNameII" value="BNB">
+            <input type="text" id="currencyAmountII" value="$31.74">
+        </div>
+        <div class="transactionDown">
+            <input type="text" id="currencyNameII" value="PnL de hoy" style="width: 40%"> 
+            <input type="text" id="currencyAmountIII" value="+0.73(+2.34%)" style="color: #22b796">
+        </div>
+        
+        <div class="transactionDown">
+           <input type="text" id="currencyNameII" value="Coste promedio" style="width: 40%">
+           <input type="text" id="currencyAmountIII" value="+$392.40" style="color: black; font-weight:500;">
+        </div>        
+                
+        </div>
+      </div>
+      
+      <section class="menu">
+         <div class="menuIcons">
+           <img src="images/menu.png" alt="menu">
+           
+         </div>
+            
+      </section>
+        
+  </section>
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ <!---========= SECOND PAGE OF THE APP--=========---->
+  <section class="secondPage">
+     
+     <div class="secondHeader">
+        <div class="backBtn"> <img src="images/back.png" alt="backarrow" width="20px"></div>
+        <div class="headerText">Enviar BTC</div>
+        <div class="fileIcon"> <img src="images/file.png" alt="file.png"></div>
+     </div>
+     
+     
+     <section class="box">
+        <div class="label">Dirección/factura <span class="secondIcon"><img src="images/warn.png" alt="warn.png" /></span>
+        
+        <div class="inputBox">
+           <textarea type="text" id="Ibox" placeholder="Mantén pulsado para pegar"></textarea>
+           <span class="inputIcon"><img src="images/input.png" alt="input.png"></span>
+        </div>
+     </section>
+     
+     
+     <section class="box">
+        <div class="label">Red <span class="secondIcon"><img src="images/warn.png" alt="warn.png" /></span>
+
+           <div class="inputBox">
+              <textarea type="text" id="Ibox" placeholder="Emparejar con la red auotomáticamente"></textarea>
+              <span class="inputIconII"><img src="images/down.png" alt="down.pngpng"></span>
+           </div>
+     </section>
+     
+     
+     <section class="box">
+        <div class="label">Importe de retiro <span class="secondIcon"><img src="images/warn.png" alt="warn.png" /></span>
+
+           <div class="inputBox">
+              <textarea type="text" id="Ibox" placeholder="Minimo 0"></textarea>
+              <span class="inputIcon" contenteditable="true">BTC</span> 
+              <span class="inputIcon Y" contenteditable="true">Máx.</span>
+           </div>
+     </section>
+     
+     <section class="underSecond">
+        <div class="underText">Disponible</div>
+        <div class="underAmount">
+           <input type="text" id="underMoni" value="0.02036476 BTC">
+           <span class="underIcon"><img src="images/low.png" alt="images/down.png"></span>
+        </div>
+     </section>
+     
+     <section class="secondDetail">
+        <p class="detail">
+          * No hagas retiros a un crowdfunding o a una ICO <br>
+           <span class="detailAdj">directamente. No acreditaremos a tu cuenta los token de<br></span>
+           <span class="detailAdj">esa venta. <br> </span>
+            
+           * No efectús transacciones con etidades sancionadas. <span class="Y">Leer<br>
+            más</span>
+        </p>
+        
+      </section>
+      
+        <section class="secondMenu">
+           
+           <p>Recibir Importe</p>
+           
+           <div class="menuGuid">
+              <div class="numGuid">
+                  <div class="num" contenteditable="true">0.00</div>
+                  <div class="numName" contenteditable="true">BTC </div>
+              </div>
+              
+              <button class="numBtn">Retirar</button>
+              
+           </div>
+           
+           <div class="lastText">Comisión de la red <span class="numCurrency" contenteditable="true">0.00 BTC</span></div>
+           
+        </section>
+   
+  </section>
+  
+  
+  
+  
+  
+  
+
+<!------======== THIRD PAGE OF THE APP =============--->  
+  <section class="thirdPage">
+     <div class="backBtn"> <img src="images/back.png" alt="backarrow" width="20px"></div>
+     <section class="topText">
+        <div class="load"><img src="images/load.png" alt="images/load.png"></div>
+        <div class="textI">Procesando el retiro</div>
+        <div class="textII" contenteditable="true">0.00386787 BTC</div>
+        <div class="textIII" contenteditable="true">
+           Fecha estimada de finalización:2024-05-28 22:18:04
+           Recibirás un correo electrónico cuando se complete el
+           retiro. Consulta el historial para accedar a las últimas
+           novedades.
+        </div>   
+        <div class="thirdPageBtn">
+           <button class="">Ver historial</button>
+        </div>
+     </section>
+
+  </section>
+  
+  <script src="main.js"></script>
+</body>
+</html>

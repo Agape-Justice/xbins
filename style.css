@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+   font-size: 12pt;
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   background-color: #ffffff;
+   font-family: "IMB Plex Sans" sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --mainbg: #ffffff;
+   --main: #ebebeb;
+   --mainII: #f2f2f2;
+   --important: #fcd434;
+   --minorI: #22b796;
+   --minorII: #ff0000;
+   --Tcolor: #7f7f8f;
+}
+
+.header {
+   border-bottom: 1px solid var(--main);
+}
+
+.upperhead {
+   display: flex;
+   justify-content: center;
+   padding: 2% 5%;
+}
+
+.uphead {
+   padding: 6px 6px;
+   text-align: center;
+   width: 35%;
+   border: 2px solid var(--mainII);
+   border-radius: 0px;
+   background-color: var(--mainII);
+   font-weight: 410;
+}
+
+.a {
+   background-color: var(--mainbg);
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+}
+
+.b {
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+   color: var(--Tcolor);
+}
+
+.lowerhead {
+   display: flex;
+   justify-content: space-between;
+   margin: 8% 0 3%;
+   padding: 0 4%;
+   color: var(--Tcolor);
+   font-weight: 500;
+}
+
+.lowerhead .f {
+   color: #000;
+}
+
+
+/*============= MAIN OR AMOUNT SECTION ===========*/
+.main {
+   padding: 5% 4% 3%;
+   border-bottom: 1px solid var(--main);
+}
+
+.hide {
+   font-size: 13px;
+}
+
+input {
+   border: 1px solid white;
+   outline-color: red;
+   max-width: 70%;
+   width: 40%;
+}
+
+.amountSection {
+   width: 100%;
+   display: flex;
+}
+
+#amount {
+   font-size: 28px;
+   font-weight: bold;
+   width: 30%;
+   margin: 1% 0;
+   font-family: "IMB Plex Sans" sans-serif;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+}
+
+
+#currency {
+   font-weight: 410;
+   width: 10%;
+   height: 6%;
+   margin-top: 5%;
+}
+
+img {
+   display: nonge;
+}
+
+.senderDetail {
+   display: flex;
+   font-size: 14px;
+   font-weight: 410;
+}
+
+#senderName {
+   width: 22%;
+}
+
+#senderAmount {
+   color: var(--minorI);
+   width: 30%;
+}
+
+button {
+   outline: none;
+   border: none;
+}
+
+.amountButton {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   width: 100%;
+}
+
+.btn {
+  font-weight: 500;
+  width: 60%;
+  padding: 3% 8%;
+  font-size: 14px;
+  border-radius: 10px;
+  margin: 5% 0 2%;
+  background-color: var(--main);
+}
+
+.deposit {
+  background-color: var(--important);
+}
+
+.downarrow {
+   text-align: center;
+   margin-top: 1%;
+}
+
+
+.downarrow img {
+   width: 12px;
+   height: 10px;
+}
+
+/*==========TRANSACTION SECTION ========**/
+.transSection {
+  padding: 3% 4%;
+}
+
+.upperTrans {
+   background: red;
+   position: relative;
+}
+
+.dot {
+   color: var(--minorI);
+   font-weight: bold;
+   font-size: 35px;
+   align-self: center;
+   position: absolute;
+}
+
+.upTransDetail{ 
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.transDetail {
+   font-size: 13px;
+   position: absolute;
+   left: 4%;
+   top: 4px; 
+}
+
+.sidearrow {
+   position: absolute;
+   right: 3%;
+}
+
+
+.middleTrans {
+   display: flex;
+   margin-top: 12%;
+   padding: 0 4%;
+   justify-content: space-between;
+}
+
+.middleText {
+   display: flex;
+   gap: 30px;
+   color: var(--Tcolor);
+   font-weight: 500;
+}
+
+.II {
+   color: #000;
+   position: relative;
+}
+
+.II::before{
+   content: "";
+   width: 20px;
+   height: 3px;
+   background-color: var(--important);
+   position: absolute;
+   top: 25px;
+   left: 50%;
+}
+
+.transaction {
+   padding: 4% 4%;
+}
+
+
+.currencyIcon {
+   width: 20px;
+   height: 20px;
+   background-color: darkblue;
+   border-radius: 50%;
+   color: var(--important);
+   text-align: center;
+   font-size: 17px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+}
+
+
+.transactionUp {
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.currencyGuid { 
+   display: flex;
+   gap: 5%;
+   font-size: 14px;
+}
+
+#currencyName {
+   width: 20%;
+   font-weight: 500;
+}
+
+#currencyAmount {
+   width: 10%;
+   text-align: right;
+   font-weight: 500;
+}
+
+
+.transactionDown {
+   padding: 0 0 0 9%;
+   display: flex;
+   justify-content: space-between;
+   color: var(--main);
+   margin-top: 2%;
+}
+
+#currencyNameII {
+   width: 20%;
+   font-weight: 400;
+   color: var(--Tcolor);
+}
+
+#currencyAmountII {
+   width: 20%;
+   font-weight: 400;
+   text-align: right;
+   color: var(--Tcolor);
+}
+
+
+#currencyAmountIII {
+   width: 40%;
+   font-weight: 400;
+   text-align: right;
+   color: var(--Tcolor);
+   font-size: 12px;
+}
+
+.menu {
+   width: 100%;
+   height: 20%;
+   background-color: var(--mainbg);
+   position: absolute;
+   bottom: 3px;
+}
+
+.menu img {
+   width: 100%;
+   background-color: var(--mainbg);
+   position: absolute;
+   bottom: 3px;
+}
+
+.lowerTrans {
+   border-bottom: 1px solid var(--main);
+}
+
+
+/*=============. FIRST PAGE ICONS =============*/
+
+.eye img{
+   width: 16px;
+   height: 12px;
+}
+.downIcon {
+      margin-top: 3%;
+
+}
+.downIcon img{
+   width: 10px;
+   height: 10px;
+}
+
+.right {
+   margin-top: 2px;
+}
+.right img {
+   width: 10px;
+   height: 10px;
+}
+
+.middleIcon img {
+   width: 60px;
+}
+
+.currencyIcon img {
+   width: 22px;
+   height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================ SECOND PAGE===========*/
+.secondPage {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   bottom: 0;
+   top: 0;
+   z-index: 10;
+   background-color: var(--mainbg);
+   display: none;
+}
+
+.secondHeader {
+   display: flex;
+   justify-content: space-between;
+   padding: 2% 4%;
+}
+
+.headerText {
+   font-weight: 600;
+}
+
+.box {
+   padding: 8% 4% 0;
+}
+
+.inputBox {
+   background-color: var(--mainII);
+   padding: 14px 13px;
+   border-radius: 8px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 1%;
+}
+
+.label {
+   color: var(--Tcolor);
+   font-weight: 410;
+   font-size: 14px;
+}
+
+#Ibox {
+   margin-top: 1%;
+   max-width: 100%;
+   height: 19px;
+   max-height: 70px;
+   width: 90%;
+   font-family: Arial;
+   font-size: 14px;
+   font-weight: 400;
+   background-color: transparent;
+   font-weight: 400;
+   border: none;
+}
+
+.inputIcon {
+   color: #000;
+}
+
+.Y {
+   color: #e1aa06;
+   margin-left: 3%;
+}
+
+.underSecond {
+   display: flex;
+   padding:  5% 4% ;
+   font-size: 13px;
+   justify-content: space-between;
+}
+
+.underAmount {
+   display: flex;
+   gap: 8px;
+}
+
+#underMoni {
+   font-size: 12px;
+   max-width: 100%;
+   width: 90%;
+   text-align: right;
+   background: transparent;
+   font-weight: 400;
+}
+
+.underIcon img{
+   width: 10px;
+   display: nobne;
+}
+
+.underText {
+   color: var(--Tcolor);
+}
+
+.secondDetail {
+   border-top: 1px solid var(--main);
+   padding: 5% 4%;
+   font-size: 12px;
+   color: var(--Tcolor);
+   line-height: 18px;
+   text-align: left;
+   font-weight: 400;
+}
+
+.detailAdj {
+   margin-left: 2%;
+}
+
+.secondMenu {
+   padding: 3% 4%;
+   border-top: 1px solid var(--main);
+   position: absolute;
+   bottom: 2px;
+   width: 100%;
+}
+
+.secondMenu p {
+   color: var(--Tcolor);
+   font-size: 14px;
+}
+
+.numGuid {
+   display: flex;
+   gap: 3px;
+}
+
+.num {
+   font-weight: 600;
+   font-size: 19px;
+}
+
+.numName {
+   font-weight: 510;
+   font-size: 13px;
+   margin-top: 5px;
+}
+
+.menuGuid {
+   display: flex;
+   justify-content: space-between;
+   align-items: center ;
+}
+
+.numBtn {
+   background-color: var(--important);
+   padding: 10px 40px;
+   border-radius: 5px;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.lastText {
+   color: var(--Tcolor);
+   font-size: 14px;  
+}
+
+.numCurrency {
+   color: #000;
+   font-weight: 410;
+}
+
+
+/*=========≠=========== SECOND PAGE ICONS =============== */
+.backBnt {
+   width: 20px;
+}
+
+.backBtn img {
+   width: 20px;
+}
+
+.fileIcon img{
+   width: 50px;
+}
+
+.secondIcon {
+   width: 13px;
+}
+
+.secondIcon img{
+   width: 13px;
+}
+
+.inputIcon img {
+   width : 42px;
+}
+
+.inputIconII img{
+   width: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================ SECOND PAGE===========*/
+.thirdPage {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   bottom: 0;
+   top: 0;
+   z-index: 10;
+   padding: 2% 4%;
+   background-color: var(--mainbg);
+   display: none;
+}
+
+.topText {
+   text-align: center;
+
+}
+
+.load {
+   margin-top: 10%;
+}
+
+.load img{
+   width: 60px;
+}
+
+.textI {
+   font-weight: 600;
+   margin-top: 15%;
+   font-size: 18px;
+}
+
+.textII {
+   font-weight: 600;
+   margin-top: 5%;
+   font-size: 22px;
+}
+
+.textIII {
+   font-size: 13px;
+   color: var(--Tcolor);
+   margin-top: 5%;
+   line-height: 18px;
+}
+
+.thirdPageBtn { 
+   position: absolute;
+   display: block;
+   bottom: 8px;
+   right: 0;
+   left: 0;
+}
+
+.thirdPageBtn button {
+    background-color: var(--important);
+    padding: 14px 0px;
+    width: 90%;
+    font-weight: 500;
+    border-radius: 8px;  
+}
+
