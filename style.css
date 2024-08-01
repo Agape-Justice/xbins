@@ -310,7 +310,7 @@ button {
    height: 3%;
    background-color: var(--mainbg);
    position: absolute;
-   bottom: 4px;
+   bottom: 2px;
 }
 
 .menu img {
