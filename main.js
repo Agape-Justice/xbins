@@ -5,7 +5,9 @@ const secondPage = document.querySelector('.secondPage');
 const lastPage = document.querySelector('.thirdPage');
 const backBtns = document.querySelectorAll('.backBtn');
 const change = document.querySelector('.change');
-const changeColor = document.getElementById('currencyAmountIII');
+const changeI = document.querySelector('.changeII');
+const changeColor = document.querySelector('.currencyAmountIII');
+const changeColorI = document.querySelector('.currencyAmountIV');
 const thirdBtn = document.querySelector('.thirdPageBtn');
 
 
@@ -67,6 +69,17 @@ function cngColor() {
       changeColor.style.color = 'red';
       }
       
+   })
+
+
+   changeI.addEventListener('click', (e) => {
+      if (changeColorI.style.color == 'red') {
+         changeColorI.style.color = '#22b796';
+
+      } else {
+         changeColorI.style.color = 'red';
+      }
+
    })
 
 }

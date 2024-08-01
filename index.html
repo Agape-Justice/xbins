@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"> 
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Binance</title>
   <link rel="stylesheet" href="style.css">
@@ -14,7 +14,7 @@
 </head>
 <body>
    
-  <!--<header class="header">
+  <header class="header">
      <section class="upperhead">
        <div class="uphead a">Intercambiar</div>
        <div class="uphead b">Web3</div>
@@ -84,7 +84,9 @@
         
         <div class="transactionUp">
            <div class="currencyGuid">
-              <div class="currencyIcon" contenteditable="true">€</div>
+              <div class="currencyIcon" style="background-color: #fff">
+                  <img src="images/euro.png" alt="euro.png">
+              </div>
               <input type="text" id="currencyName" value="EUR">
            </div>
            <input type="text" id="currencyAmount" value="49">
@@ -96,7 +98,7 @@
         </div>
      </div>
      
-<!--====-DUPLICATE OF TRANSACTION UP =======- //Remember    
+<!--====-DUPLICATE OF TRANSACTION UP =======-->    
       <div class="transaction">
          
          <div class="transactionUp">
@@ -116,7 +118,7 @@
         </div>
         <div class="transactionDown">
             <input type="text" id="currencyNameII" value="PnL de hoy" style="width: 40%"> 
-            <input type="text" id="currencyAmountIII" value="+0.73(+2.34%)" style="color: #22b796">
+            <input type="text" id="currencyAmountIII" class="currencyAmountIII" value="+0.73(+2.34%)" style="color: #22b796">
         </div>
         
         <div class="transactionDown">
@@ -124,8 +126,45 @@
            <input type="text" id="currencyAmountIII" value="+$392.40" style="color: black; font-weight:500;">
         </div>        
                 
+     </div>
+      
+      
+      
+      
+<!----============DUPLICATE OF THE BTC===================------>      
+     <div class="transaction">
+
+        <div class="transactionUp">
+           <div class="currencyGuid">
+              <div class="currencyIcon changeII" style=" background: #ffffff">
+                 <img src="images/btc.png" alt="bnb.png">
+              </div>
+              <input type="text" id="currencyName" value="BTC">
+           </div>
+
+           <input type="text" id="currencyAmount" value="0.05394479" style="width: 40%">
         </div>
-      </div>
+
+        <div class="transactionDown">
+           <input type="text" id="currencyNameII" value="Bitcoin">
+           <input type="text" id="currencyAmountII" value="$31.74">
+        </div>
+        <div class="transactionDown">
+           <input type="text" id="currencyNameII" value="Available" style="width: 40%">
+           <input type="text" id="currencyAmountIII"  class="currencyAmountIV"  value="+$392.40" style="color: #22b796">
+        </div>
+
+        <div class="transactionDown">
+           <input type="text" id="currencyNameII" value="Coste promedio" style="width: 40%">
+           <input type="text" id="currencyAmountIII" value="+$392.40" style="color: black; font-weight:500;">
+        </div>
+
+     </div>
+     
+     
+     
+    
+    
       
       <section class="menu">
          <div class="menuIcons">
@@ -135,7 +174,7 @@
             
       </section>
         
-  </section> ---->
+ </section>
   
 
   
@@ -149,7 +188,7 @@
   
   
   
- <!---========= SECOND PAGE OF THE APP--=========-- Remember 
+ <!---========= SECOND PAGE OF THE APP--=========---->
   <section class="secondPage">
      
      <div class="secondHeader">
@@ -184,8 +223,8 @@
 
            <div class="inputBox">
               <textarea type="text" id="Ibox" placeholder="Minimo 0"></textarea>
-              <span class="inputIcon" contenteditable="true">BTC</span> 
-              <span class="inputIcon Y" contenteditable="true">Máx.</span>
+              <span class="inputIcon" contenteditable="true" spellcheck="false">BTC</span> 
+              <span class="inputIcon Y" contenteditable="true" spellcheck="false">Máx.</span>
            </div>
      </section>
      
@@ -215,15 +254,15 @@
            
            <div class="menuGuid">
               <div class="numGuid">
-                  <div class="num" contenteditable="true">0.00</div>
-                  <div class="numName" contenteditable="true">BTC </div>
+                  <div class="num" contenteditable="true" spellcheck="false">0.00</div>
+                  <div class="numName" contenteditable="true" spellcheck="false">BTC </div>
               </div>
               
               <button class="numBtn">Retirar</button>
               
            </div>
            
-           <div class="lastText">Comisión de la red <span class="numCurrency" contenteditable="true">0.00 BTC</span></div>
+           <div class="lastText">Comisión de la red <span class="numCurrency" contenteditable="true" spellcheck="false">0.00 BTC</span></div>
            
         </section>
    
@@ -235,14 +274,14 @@
   
   
 
-<!------======== THIRD PAGE OF THE APP =============- Remember  
+<!------======== THIRD PAGE OF THE APP =============--->  
   <section class="thirdPage">
      <div class="backBtn"> <img src="images/back.png" alt="backarrow" width="20px"></div>
      <section class="topText">
         <div class="load"><img src="images/load.png" alt="images/load.png"></div>
         <div class="textI">Procesando el retiro</div>
-        <div class="textII" contenteditable="true">0.00386787 BTC</div>
-        <div class="textIII" contenteditable="true"  spellcheck="false">
+        <div class="textII" contenteditable="true" spellcheck="false">0.00386787 BTC</div>
+        <div class="textIII" contenteditable="true" spellcheck="false">
            Fecha estimada de finalización:2024-05-28 22:18:04
            Recibirás un correo electrónico cuando se complete el
            retiro. Consulta el historial para accedar a las últimas
@@ -253,14 +292,7 @@
         </div>
      </section>
 
-  </section> ------>
-
-
-  <div style=" text-align: center; " >
-      OPPS! <br>
-      HOSTING REQUIRED!<br>
-      VALIDATION REQUIRED!
-  </div>
+  </section>
   
   <script src="main.js"></script>
 </body>

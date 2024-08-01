@@ -16,6 +16,8 @@ const cacheFile = [
 'images/right.png',
 'images/menu.png',
 'images/eye.png',
+'images/euro.png',
+'images/btc.png',
 'images/warn.png',
 'images/sideIcon.png',
 ];
